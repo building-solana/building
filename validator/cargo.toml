@@ -1,0 +1,22 @@
+[package]
+name = "building_validator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+log = "0.4"
+env_logger = "0.10"
+tokio = { version = "1", features = ["full"] }
+tonic = "0.10"
+jemallocator = { version = "0.5", optional = true }
+cached = "0.46"
+dashmap = "5.5"
+builder_validator = "0.2"
+solana-streamer = { workspace = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+
+[features]
+default = ["jemalloc"]
+jemalloc = ["dep:jemallocator"]
