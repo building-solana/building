@@ -3,7 +3,10 @@ name = "building_validator"
 version = "0.1.0"
 edition = "2021"
 
+
 [dependencies]
+solana-sdk = "1.10"
+solana-client = "1.10"
 clap = { version = "4.0", features = ["derive"] }
 log = "0.4"
 env_logger = "0.10"

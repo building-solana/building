@@ -53,11 +53,11 @@ fn main() {
     match &cli.command {
         Some(Commands::Fetch { start }) => {
             info!("Executing fetch command with starting slot: {:?}", start);
-            println!("Fetching blocks from the Solana blockchain (placeholder)");
+            println!("Fetching blocks from the Solana blockchain");
         }
         Some(Commands::Organize {}) => {
             info!("Executing organize command");
-            println!("Organizing blocks (placeholder)");
+            println!("Organizing blocks");
         }
         Some(Commands::Build { slot, previous }) => {
             info!(

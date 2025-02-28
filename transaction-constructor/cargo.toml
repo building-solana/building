@@ -4,17 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# Argument parsing
+solana-client = "1.10"
 clap = { version = "4.0", features = ["derive"] }
-
-# Logging
 log = "0.4"
 env_logger = "0.10"
-
-# Async runtime
 tokio = { version = "1", features = ["full"] }
-
-# Networking and bindings
 tonic = "0.10"
 openssl = "0.10"
 openssl-sys = "0.9"
